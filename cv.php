@@ -252,17 +252,17 @@ $html = '
                     <div class="header-main">
                         <h1>' . htmlspecialchars($name) . '</h1>
                         <div class="tagline">
-                            Full‑stack development student · klantgericht · snel lerend
+                            Full‑stack development student <br> Klantgericht · Snel Lerend
                         </div>
                         <div class="small muted" style="margin-top: 6px;">
-                            ' . htmlspecialchars($address) . ' · ' . htmlspecialchars($phone) . ' · ' . htmlspecialchars($email) . '
+                            ' . htmlspecialchars($address) . ' <br> ' . htmlspecialchars($phone) . ' <br> ' . htmlspecialchars($email) . '
                         </div>
                         <div class="small muted">
                             Geboren ' . htmlspecialchars($birthDate) . ' · ' . htmlspecialchars($nationality) . '
                         </div>
-                        <div class="small" style="margin-top: 6px; color: var(--clay);">
+                        <!-- <div class="small" style="margin-top: 6px; color: var(--clay);">
                             <strong>Ik zoek:</strong> ' . htmlspecialchars($roleSeeking) . ' · ' . htmlspecialchars($availability) . '
-                        </div>
+                        </div> -->
                     </div>
                 </div>
             </div>
