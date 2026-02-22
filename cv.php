@@ -21,7 +21,7 @@ $nationality   = 'Belg / Amerikaan';
 $availability  = 'Vrijdag, weekend en vakantie, vanaf 28 juli 2025';
 $roleSeeking   = 'Studentenjob';
 
-// Image: make sure profile.jpg exists next to this PHP file
+// Image (optional)
 $photoPath = __DIR__ . '/profile.jpg';
 $photoSrc  = 'file://' . $photoPath;
 
@@ -32,7 +32,6 @@ $html = '
     <meta charset="UTF-8">
     <title>CV - ' . htmlspecialchars($name) . '</title>
     <style>
-        /* Palette (from Petrichor theme) */
         :root {
             --ink:   #1a1814;
             --dust:  #c8bfad;
@@ -61,7 +60,7 @@ $html = '
         }
 
         .page {
-            padding: 32px 40px;
+            padding: 26px 32px;
         }
 
         h1, h2, h3 {
@@ -71,15 +70,15 @@ $html = '
         }
 
         h1 {
-            font-size: 22px;
+            font-size: 20px;
             letter-spacing: 0.08em;
             text-transform: uppercase;
         }
 
         h2 {
-            font-size: 12px;
+            font-size: 11px;
             margin-bottom: 4px;
-            letter-spacing: 0.22em;
+            letter-spacing: 0.20em;
             text-transform: uppercase;
             color: var(--storm);
         }
@@ -100,7 +99,7 @@ $html = '
 
         .divider {
             border-top: 1px solid var(--dust);
-            margin: 10px 0 18px;
+            margin: 8px 0 14px;
         }
 
         .layout {
@@ -116,26 +115,26 @@ $html = '
         }
 
         .col-left {
-            width: 34%;
-            padding-right: 18px;
+            width: 35%;
+            padding-right: 16px;
             border-right: 1px solid rgba(200,191,173,0.7);
         }
 
         .col-right {
-            width: 66%;
-            padding-left: 18px;
+            width: 65%;
+            padding-left: 16px;
         }
 
         .section {
-            margin-bottom: 16px;
+            margin-bottom: 12px;
         }
 
         .section-title {
-            margin-bottom: 6px;
+            margin-bottom: 4px;
         }
 
         .item {
-            margin-bottom: 8px;
+            margin-bottom: 7px;
         }
 
         .item-header {
@@ -157,18 +156,24 @@ $html = '
         }
 
         .pill-row {
-            margin-top: 4px;
+            margin-top: 3px;
         }
 
         .pill {
             display: inline-block;
             padding: 1px 6px;
-            margin: 1px 4px 1px 0;
+            margin: 1px 4px 2px 0;
             border-radius: 999px;
-            border: 1px solid rgba(155,124,94,0.5);
+            border: 1px solid rgba(155,124,94,0.6);
             font-size: 9px;
             color: var(--storm);
-            background-color: rgba(232,226,217,0.7);
+            background-color: rgba(232,226,217,0.9);
+        }
+
+        .pill--soft {
+            border-color: var(--ochre);
+            background-color: rgba(196,137,58,0.08);
+            color: var(--storm);
         }
 
         .list {
@@ -192,13 +197,13 @@ $html = '
 
         .header-photo {
             display: table-cell;
-            width: 68px;
+            width: 60px;
             vertical-align: top;
         }
 
         .header-photo img {
-            width: 60px;
-            height: 60px;
+            width: 56px;
+            height: 56px;
             border-radius: 50%;
             object-fit: cover;
             border: 1px solid var(--clay);
@@ -210,17 +215,6 @@ $html = '
             padding-left: 10px;
         }
 
-        .page-break {
-            page-break-before: always;
-        }
-
-        .bottom-note {
-            margin-top: 24px;
-            font-size: 8px;
-            color: var(--slate);
-            text-align: right;
-        }
-
         .section-label {
             font-size: 8px;
             letter-spacing: 0.28em;
@@ -228,61 +222,85 @@ $html = '
             color: var(--clay);
             margin-bottom: 6px;
         }
+
+        .bottom-note {
+            margin-top: 10px;
+            font-size: 8px;
+            color: var(--slate);
+            text-align: right;
+        }
     </style>
 </head>
 <body>
 
-<!-- PAGE 1: Portfolio-style overview -->
 <div class="page">
 
-    <!-- <div class="section-label">Curriculum Vitae</div>
-    <div class="divider" style="margin-top: 4px;"></div> -->
-
     <div class="layout">
-
         <!-- Left column -->
         <div class="col-left">
 
-            <!-- Header with photo -->
+            <!-- Header -->
             <div class="section">
                 <div class="header-row">
-                    <!-- <div class="header-photo">
+                    <!-- Optional photo; uncomment if you want the picture -->
+                    <!--
+                    <div class="header-photo">
                         <img src="' . htmlspecialchars($photoSrc) . '" alt="Profile photo">
-                    </div> -->
+                    </div>
+                    -->
                     <div class="header-main">
                         <h1>' . htmlspecialchars($name) . '</h1>
                         <div class="tagline">
-                            Full‑stack development student <br> Klantgericht · Snel Lerend
+                            Full‑stack development student <br> Klantgericht · Snel lerend
                         </div>
                         <div class="small muted" style="margin-top: 6px;">
-                            ' . htmlspecialchars($address) . ' <br> ' . htmlspecialchars($phone) . ' <br> ' . htmlspecialchars($email) . '
+                            ' . htmlspecialchars($address) . '<br>
+                            ' . htmlspecialchars($phone) . '<br>
+                            ' . htmlspecialchars($email) . '
                         </div>
                         <div class="small muted">
                             Geboren ' . htmlspecialchars($birthDate) . ' · ' . htmlspecialchars($nationality) . '
                         </div>
-                        <!-- <div class="small" style="margin-top: 6px; color: var(--clay);">
-                            <strong>Ik zoek:</strong> ' . htmlspecialchars($roleSeeking) . ' · ' . htmlspecialchars($availability) . '
-                        </div> -->
+                        <div class="small" style="margin-top: 6px; color: var(--clay);">
+                            <strong>Ik zoek een stage in front-end en back-end. In de periode van 24 maart t.e.m. 21 april (160 uur in totaal)</strong>
+                        </div>
                     </div>
                 </div>
             </div>
 
-            <!-- Soft skills -->
+            <!-- Hard skills (technical) -->
+            <div class="section">
+                <div class="section-title">
+                    <h2>Hard skills</h2>
+                </div>
+                <div class="pill-row">
+                    <span class="pill pill--soft">PHP · Laravel</span>
+                    <span class="pill pill--soft">JavaScript · TypeScript</span>
+                    <span class="pill pill--soft">Angular</span>
+                    <span class="pill pill--soft">HTML · CSS</span>
+                    <span class="pill pill--soft">MySQL</span>
+                    <span class="pill pill--soft">Git · GitHub</span>
+                    <span class="pill pill--soft">Docker</span>
+                    <span class="pill pill--soft">Linux · macOS</span>
+                </div>
+            </div>
+
+            <!-- Soft skills (prominent) -->
             <div class="section">
                 <div class="section-title">
                     <h2>Soft skills</h2>
                 </div>
                 <div class="pill-row">
-                    <span class="pill">Hardwerkend</span>
-                    <span class="pill">Snel lerend</span>
-                    <span class="pill">Flexibel</span>
-                    <span class="pill">Stressbestendig</span>
-                    <span class="pill">Samenwerken</span>
-                    <span class="pill">Punctueel</span>
-                    <span class="pill">Klantgericht</span>
-                    <span class="pill">Vriendelijk</span>
-                    <span class="pill">Sociaal</span>
-                    <span class="pill">Verantwoordelijk</span>
+                    <span class="pill pill--soft">Hardwerkend</span>
+                    <span class="pill pill--soft">Snel lerend</span>
+                    <span class="pill pill--soft">Flexibel</span>
+                    <span class="pill pill--soft">Stressbestendig</span>
+                    <span class="pill pill--soft">Samenwerken</span>
+                    <span class="pill pill--soft">Punctueel</span>
+                    <span class="pill pill--soft">Klantgericht</span>
+                    <span class="pill pill--soft">Vriendelijk</span>
+                    <span class="pill pill--soft">Sociaal</span>
+                    <span class="pill pill--soft">Verantwoordelijk</span>
                 </div>
             </div>
 
@@ -308,7 +326,7 @@ $html = '
             <!-- Hobbies -->
             <div class="section">
                 <div class="section-title">
-                    <h2>Hobby&apos;s</h2>
+                    <h2>Hobby\'s</h2>
                 </div>
                 <ul class="list small">
                     <li>Boogschieten, basketbal, volleybal</li>
@@ -324,13 +342,30 @@ $html = '
                     <h2>Extra</h2>
                 </div>
                 <div class="item small">
-                    <span class="item-header">Rijbewijs</span>
+                    <span class="item-header">Rijbewijs met auto beschikbaar</span>
                 </div>
             </div>
+
         </div>
 
         <!-- Right column -->
         <div class="col-right">
+
+            <!-- About me -->
+            <div class="section">
+                <div class="section-title">
+                    <h2>Over mij</h2>
+                </div>
+                <p>
+                    Gemotiveerde en leergierige student met een passie voor technologie en klantgerichte service.
+                    Ervaring in diverse sectoren, van retail tot entertainment, met een focus op teamwork,
+                    probleemoplossing en het leveren van een positieve ervaring voor klanten. Op zoek naar een
+                    studentenjob waar ik mijn vaardigheden kan inzetten, nieuwe dingen kan leren en een
+                    waardevolle bijdrage kan leveren.
+                </p>
+            </div>
+
+            <div class="divider"></div>
 
             <!-- Work experience -->
             <div class="section">
@@ -342,7 +377,8 @@ $html = '
                     <span class="item-header">Kassier / student – Brico, Hasselt</span>
                     <span class="item-sub">Aug 2025 – Sep 2025 · studentenjob</span>
                     <span class="item-meta">
-                        Rekken aanvullen, displays onderhouden, transacties verwerken en klanten helpen in een drukke doe‑het‑zelfzaak.
+                        Rekken aanvullen, displays onderhouden, transacties verwerken en klanten helpen
+                        in een drukke doe‑het‑zelfzaak.
                     </span>
                 </div>
 
@@ -350,7 +386,8 @@ $html = '
                     <span class="item-header">Barman &amp; staff – Versus, Hasselt</span>
                     <span class="item-sub">Apr 2025 – Jun 2025 · studentenjob</span>
                     <span class="item-meta">
-                        Dranken maken, bestellingen opnemen en betalingen afhandelen in een drukke club; problemen ter plekke oplossen met vriendelijke, efficiënte service.
+                        Dranken maken, bestellingen opnemen en betalingen afhandelen in een drukke club;
+                        problemen ter plekke oplossen met vriendelijke, efficiënte service.
                     </span>
                 </div>
 
@@ -358,7 +395,7 @@ $html = '
                     <span class="item-header">Productiemedewerker – Studio Pieter Stockmans, Genk</span>
                     <span class="item-sub">Jan 2025 · 2 weken</span>
                     <span class="item-meta">
-                        Meegewerkt aan creatie, decoratie en presentatie van porselein, van grondstof tot afgewerkt stuk.
+                        Meegewerkt aan creatie, decoratie en presentatie van porselein.
                     </span>
                 </div>
 
@@ -366,7 +403,8 @@ $html = '
                     <span class="item-header">Acteur / technicus – Old Tucson Company, Arizona (USA)</span>
                     <span class="item-sub">Oct 2022 – Dec 2024</span>
                     <span class="item-meta">
-                        In‑world personages gespeeld om locaties tot leven te brengen en licht en geluid bediend voor shows en events.
+                        In‑world personages gespeeld om locaties tot leven te brengen en licht en geluid bediend
+                        voor shows en events.
                     </span>
                 </div>
 
@@ -374,12 +412,13 @@ $html = '
                     <span class="item-header">Seizoensmedewerker verhuizing – Uyttendaele Europese Verhuizingen, Aarschot</span>
                     <span class="item-sub">Zomer 2019 · 4 weken</span>
                     <span class="item-meta">
-                        Vrachtwagens laden en lossen, goederen veilig verplaatsen en efficiënt samenwerken in een logistiek team.
+                        Vrachtwagens laden en lossen, goederen veilig verplaatsen en efficiënt samenwerken
+                        in een logistiek team.
                     </span>
                 </div>
             </div>
 
-            <div class="divider" style="margin-top: 4px;"></div>
+            <div class="divider"></div>
 
             <!-- Education -->
             <div class="section">
@@ -391,7 +430,8 @@ $html = '
                     <span class="item-header">Full Stack Developer (Diploma) – SyntraPXL, Hasselt</span>
                     <span class="item-sub">2025 – 2026 (lopend)</span>
                     <span class="item-meta">
-                        OO‑programmeren, REST API&apos;s, PHP/Laravel, Node.js, security, frontend (Angular/JS) en Agile workflows.
+                        OO‑programmeren, REST API\'s, PHP/Laravel, Node.js, security, frontend (Angular/JS)
+                        en Agile workflows.
                     </span>
                 </div>
 
@@ -412,10 +452,10 @@ $html = '
                 </div>
             </div>
 
-            <div class="divider" style="margin-top: 4px;"></div>
+            <div class="divider"></div>
 
             <!-- AI / Extra learning -->
-            <div class="section">
+            <!-- <div class="section">
                 <div class="section-title">
                     <h2>AI &amp; extra</h2>
                 </div>
@@ -432,76 +472,18 @@ $html = '
                     <span class="item-header">Responsible AI usage &amp; prompts – zelfstudie &amp; workshops</span>
                     <span class="item-sub">2024 – nu</span>
                     <span class="item-meta">
-                        Verantwoord AI gebruik in development: AI inzetten voor ideeën en refactoring, maar altijd zelf reviewen, testen en verantwoordelijkheid nemen.
+                        Verantwoord AI gebruik in development: AI inzetten voor ideeën en refactoring,
+                        maar altijd zelf reviewen, testen en verantwoordelijkheid nemen.
                     </span>
                 </div>
+            </div> -->
+
+            <div class="bottom-note">
+                Deze pdf is automatisch gegenereerd met PHP (Dompdf &amp; HTML/CSS).
             </div>
         </div>
     </div>
-</div>
 
-<!-- PAGE 2: Compact Dutch student CV -->
-<div class="page page-break">
-
-    <div class="section-label">Overzicht</div>
-    <div class="divider" style="margin-top: 4px;"></div>
-
-    <h2>Persoonlijke gegevens</h2>
-    <p class="small">
-        ' . htmlspecialchars($name) . '<br>
-        ' . htmlspecialchars($address) . '<br>
-        Gsm: ' . htmlspecialchars($phone) . '<br>
-        E‑mail: ' . htmlspecialchars($email) . '<br>
-        Geboortedatum: ' . htmlspecialchars($birthDate) . '<br>
-        Nationaliteit: ' . htmlspecialchars($nationality) . '
-    </p>
-
-    <h2>Ik zoek</h2>
-    <p class="small">
-        Studentenjob<br>
-        Wanneer: vrijdag + weekend + vakantie<br>
-        Vanaf: 28 juli 2025<br>
-        Bereid om in variabel uurrooster te werken, ook avonden, weekends en feestdagen.
-    </p>
-
-    <h2>Ervaring</h2>
-    <p class="small">
-        Brico student, Hasselt – Aug 2025 – Sep 2025<br>
-        Barman/Staff, Versus Hasselt – Apr 2025 – Jun 2025<br>
-        All round productie, Studio Pieter Stockmans Porselein, Genk – Jan 2025 (2 weken)<br>
-        Acteur/medewerker event park, Arizona (USA) – Sep 2022 – Dec 2024<br>
-        Uyttendaele Europese Verhuizingen, Aarschot – Zomer 2019 (4 weken)
-    </p>
-
-    <h2>Soft skills</h2>
-    <p class="small">
-        Hardwerkend, snel lerend, flexibel, stressbestendig, samenwerken, punctueel,
-        klantgericht, vriendelijk, sociaal, verantwoordelijk.
-    </p>
-
-    <h2>Hobby&apos;s</h2>
-    <p class="small">
-        Boogschieten, basketbal, volleybal, wandelen, kamperen, gewichtheffen, klimmen,
-        snowboarden, skiën.
-    </p>
-
-    <h2>Talen</h2>
-    <p class="small">
-        Nederlands (moedertaal)<br>
-        Engels (moedertaal)<br>
-        Frans (A1)
-    </p>
-
-    <h2>Extra</h2>
-    <p class="small">
-        Rijbewijs
-    </p>
-
-    <br><br><br><br><br><br><br><br><br><br><br>
-
-    <div class="bottom-note">
-        Deze pdf is automatisch gegenereerd met PHP code (Dompdf &amp; HTML/CSS).
-    </div>
 </div>
 
 </body>
