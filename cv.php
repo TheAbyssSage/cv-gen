@@ -251,7 +251,7 @@ $html = '
                     <div class="header-main">
                         <h1>' . htmlspecialchars($name) . '</h1>
                         <div class="tagline">
-                            Full‑stack development student <br> Klantgericht · Snel lerend
+                            Full-stack development student <br> Klantgericht · Snel lerend
                         </div>
                         <div class="small muted" style="margin-top: 6px;">
                             ' . htmlspecialchars($address) . '<br>
@@ -262,7 +262,7 @@ $html = '
                             Geboren ' . htmlspecialchars($birthDate) . ' · ' . htmlspecialchars($nationality) . '
                         </div>
                         <div class="small" style="margin-top: 6px; color: var(--clay);">
-                            <strong>Ik zoek een stage in front-end en back-end. In de periode van 24 maart t.e.m. 21 april (160 uur in totaal)</strong>
+                            <strong>Ik ben op zoek naar een stageplaats in front-end en/of back-end development.<br>In de periode 24 maart t.e.m. 21 april (totaal 160 uur). Alvast hartelijk dank voor het overwegen van mijn kandidatuur!</strong>
                         </div>
                     </div>
                 </div>
@@ -326,7 +326,7 @@ $html = '
             <!-- Hobbies -->
             <div class="section">
                 <div class="section-title">
-                    <h2>Hobby\'s</h2>
+                    <h2>Hobbys</h2>
                 </div>
                 <ul class="list small">
                     <li>Boogschieten, basketbal, volleybal</li>
@@ -357,11 +357,9 @@ $html = '
                     <h2>Over mij</h2>
                 </div>
                 <p>
-                    Gemotiveerde en leergierige student met een passie voor technologie en klantgerichte service.
-                    Ervaring in diverse sectoren, van retail tot entertainment, met een focus op teamwork,
-                    probleemoplossing en het leveren van een positieve ervaring voor klanten. Op zoek naar een
-                    studentenjob waar ik mijn vaardigheden kan inzetten, nieuwe dingen kan leren en een
-                    waardevolle bijdrage kan leveren.
+                    Ik ben een gemotiveerde en leergierige student met veel interesse in technologie en in het bieden van goede service aan klanten.  
+                    Door mijn ervaringen in verschillende sectoren (retail, horeca, entertainment, …) heb ik geleerd om goed samen te werken, problemen vlot op te lossen en anderen een prettige ervaring te bezorgen.  
+                    Graag zou ik tijdens mijn stage mijn vaardigheden verder kunnen ontwikkelen, bijleren en hopelijk een nuttige bijdrage leveren aan het team.
                 </p>
             </div>
 
@@ -377,17 +375,15 @@ $html = '
                     <span class="item-header">Kassier / student – Brico, Hasselt</span>
                     <span class="item-sub">Aug 2025 – Sep 2025 · studentenjob</span>
                     <span class="item-meta">
-                        Rekken aanvullen, displays onderhouden, transacties verwerken en klanten helpen
-                        in een drukke doe‑het‑zelfzaak.
+                        Rekken aanvullen, displays netjes houden, klanten vriendelijk helpen en kassa verrichten in een levendige doe-het-zelfzaak.
                     </span>
                 </div>
 
                 <div class="item">
-                    <span class="item-header">Barman &amp; staff – Versus, Hasselt</span>
+                    <span class="item-header">Barman & staff – Versus, Hasselt</span>
                     <span class="item-sub">Apr 2025 – Jun 2025 · studentenjob</span>
                     <span class="item-meta">
-                        Dranken maken, bestellingen opnemen en betalingen afhandelen in een drukke club;
-                        problemen ter plekke oplossen met vriendelijke, efficiënte service.
+                        Dranken klaarmaken, bestellingen opnemen en klanten met een glimlach bedienen in een bruisende club; steeds proberen om problemen snel en vriendelijk op te lossen.
                     </span>
                 </div>
 
@@ -395,7 +391,7 @@ $html = '
                     <span class="item-header">Productiemedewerker – Studio Pieter Stockmans, Genk</span>
                     <span class="item-sub">Jan 2025 · 2 weken</span>
                     <span class="item-meta">
-                        Meegewerkt aan creatie, decoratie en presentatie van porselein.
+                        Meegeholpen bij het maken, decoreren en presenteren van porseleinproducten.
                     </span>
                 </div>
 
@@ -403,8 +399,7 @@ $html = '
                     <span class="item-header">Acteur / technicus – Old Tucson Company, Arizona (USA)</span>
                     <span class="item-sub">Oct 2022 – Dec 2024</span>
                     <span class="item-meta">
-                        In‑world personages gespeeld om locaties tot leven te brengen en licht en geluid bediend
-                        voor shows en events.
+                        Personages gespeeld om bezoekers een leuke ervaring te geven en licht/geluid bediend tijdens shows en evenementen.
                     </span>
                 </div>
 
@@ -412,8 +407,7 @@ $html = '
                     <span class="item-header">Seizoensmedewerker verhuizing – Uyttendaele Europese Verhuizingen, Aarschot</span>
                     <span class="item-sub">Zomer 2019 · 4 weken</span>
                     <span class="item-meta">
-                        Vrachtwagens laden en lossen, goederen veilig verplaatsen en efficiënt samenwerken
-                        in een logistiek team.
+                        Vrachtwagens helpen laden/lossen en in team goederen zorgvuldig en efficiënt verplaatsen.
                     </span>
                 </div>
             </div>
@@ -423,15 +417,14 @@ $html = '
             <!-- Education -->
             <div class="section">
                 <div class="section-title">
-                    <h2>Opleiding &amp; cursussen</h2>
+                    <h2>Opleiding & cursussen</h2>
                 </div>
 
                 <div class="item">
                     <span class="item-header">Full Stack Developer (Diploma) – SyntraPXL, Hasselt</span>
                     <span class="item-sub">2025 – 2026 (lopend)</span>
                     <span class="item-meta">
-                        OO‑programmeren, REST API\'s, PHP/Laravel, Node.js, security, frontend (Angular/JS)
-                        en Agile workflows.
+                        OO-programmeren, REST API’s, PHP/Laravel, Node.js, security, frontend (Angular/JS) en Agile werken.
                     </span>
                 </div>
 
@@ -439,7 +432,7 @@ $html = '
                     <span class="item-header">Nederlands – KU Leuven, Instituut voor Levende Talen</span>
                     <span class="item-sub">Feb 2025 – Jun 2025</span>
                     <span class="item-meta">
-                        Hogere taalcursus Nederlands met focus op communicatie in professionele context.
+                        Hogere taalcursus Nederlands met aandacht voor professionele communicatie.
                     </span>
                 </div>
 
@@ -454,32 +447,8 @@ $html = '
 
             <div class="divider"></div>
 
-            <!-- AI / Extra learning -->
-            <!-- <div class="section">
-                <div class="section-title">
-                    <h2>AI &amp; extra</h2>
-                </div>
-
-                <div class="item">
-                    <span class="item-header">AI agents – build your own assistant – SyntraPXL</span>
-                    <span class="item-sub">2025 · extra module</span>
-                    <span class="item-meta">
-                        Praktische cursus over AI/agentic workflows, reliability en failure modes.
-                    </span>
-                </div>
-
-                <div class="item">
-                    <span class="item-header">Responsible AI usage &amp; prompts – zelfstudie &amp; workshops</span>
-                    <span class="item-sub">2024 – nu</span>
-                    <span class="item-meta">
-                        Verantwoord AI gebruik in development: AI inzetten voor ideeën en refactoring,
-                        maar altijd zelf reviewen, testen en verantwoordelijkheid nemen.
-                    </span>
-                </div>
-            </div> -->
-
             <div class="bottom-note">
-                Deze pdf is automatisch gegenereerd met PHP (Dompdf &amp; HTML/CSS).
+                Deze pdf is automatisch gegenereerd met PHP (Dompdf & HTML/CSS).
             </div>
         </div>
     </div>
