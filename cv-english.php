@@ -251,7 +251,7 @@ $html = '
                     <div class="header-main">
                         <h1>' . htmlspecialchars($name) . '</h1>
                         <div class="tagline">
-                            Full-stack development student <br> Klantgericht · Snel lerend
+                            Full-stack development student <br> Customer-focused · Quick learner
                         </div>
                         <div class="small muted" style="margin-top: 6px;">
                             ' . htmlspecialchars($address) . '<br>
@@ -259,11 +259,14 @@ $html = '
                             ' . htmlspecialchars($email) . '
                         </div>
                         <div class="small muted">
-                            Geboren ' . htmlspecialchars($birthDate) . ' · ' . htmlspecialchars($nationality) . '
+                            Born ' . htmlspecialchars($birthDate) . ' · ' . htmlspecialchars($nationality) . '
                         </div>
-                        <div class="small" style="margin-top: 6px; color: var(--clay);">
-                            <strong>Ik ben op zoek naar een stageplaats in front-end en/of back-end development.<br>In de periode 24 maart t.e.m. 21 april (totaal 160 uur). Alvast hartelijk dank voor het overwegen van mijn kandidatuur!</strong>
-                        </div>
+                        <!-- <div class="small" style="margin-top: 6px; color: var(--clay);">
+                            <strong>I am looking for an internship in front-end and/or back-end development.<br>
+                            Period: March 24 to April 21 (total 160 hours).<br>
+                            I would greatly appreciate it if you would consider my application.</strong>
+                        </div> -->
+                        <br>
                     </div>
                 </div>
             </div>
@@ -271,7 +274,7 @@ $html = '
             <!-- Hard skills (technical) -->
             <div class="section">
                 <div class="section-title">
-                    <h2>Hard skills</h2>
+                    <h2>Hard Skills</h2>
                 </div>
                 <div class="pill-row">
                     <span class="pill pill--soft">PHP · Laravel</span>
@@ -288,37 +291,37 @@ $html = '
             <!-- Soft skills (prominent) -->
             <div class="section">
                 <div class="section-title">
-                    <h2>Soft skills</h2>
+                    <h2>Soft Skills</h2>
                 </div>
                 <div class="pill-row">
-                    <span class="pill pill--soft">Hardwerkend</span>
-                    <span class="pill pill--soft">Snel lerend</span>
-                    <span class="pill pill--soft">Flexibel</span>
-                    <span class="pill pill--soft">Stressbestendig</span>
-                    <span class="pill pill--soft">Samenwerken</span>
-                    <span class="pill pill--soft">Punctueel</span>
-                    <span class="pill pill--soft">Klantgericht</span>
-                    <span class="pill pill--soft">Vriendelijk</span>
-                    <span class="pill pill--soft">Sociaal</span>
-                    <span class="pill pill--soft">Verantwoordelijk</span>
+                    <span class="pill pill--soft">Hardworking</span>
+                    <span class="pill pill--soft">Quick learner</span>
+                    <span class="pill pill--soft">Flexible</span>
+                    <span class="pill pill--soft">Stress-resistant</span>
+                    <span class="pill pill--soft">Team player</span>
+                    <span class="pill pill--soft">Punctual</span>
+                    <span class="pill pill--soft">Customer-oriented</span>
+                    <span class="pill pill--soft">Friendly</span>
+                    <span class="pill pill--soft">Sociable</span>
+                    <span class="pill pill--soft">Responsible</span>
                 </div>
             </div>
 
             <!-- Languages -->
             <div class="section">
                 <div class="section-title">
-                    <h2>Talen</h2>
+                    <h2>Languages</h2>
                 </div>
                 <div class="item">
-                    <span class="item-header">Nederlands</span>
-                    <span class="item-meta">Moedertaal</span>
+                    <span class="item-header">Dutch</span>
+                    <span class="item-meta">Native</span>
                 </div>
                 <div class="item">
-                    <span class="item-header">Engels</span>
-                    <span class="item-meta">Moedertaal</span>
+                    <span class="item-header">English</span>
+                    <span class="item-meta">Native</span>
                 </div>
                 <div class="item">
-                    <span class="item-header">Frans</span>
+                    <span class="item-header">French</span>
                     <span class="item-meta">A1</span>
                 </div>
             </div>
@@ -326,23 +329,23 @@ $html = '
             <!-- Hobbies -->
             <div class="section">
                 <div class="section-title">
-                    <h2>Hobbys</h2>
+                    <h2>Hobbies</h2>
                 </div>
                 <ul class="list small">
-                    <li>Boogschieten, basketbal, volleybal</li>
-                    <li>Wandelen, kamperen, klimmen</li>
-                    <li>Gewichtheffen, snowboarden, skiën</li>
-                    <li>Muziek en games</li>
+                    <li>Archery, basketball, volleyball</li>
+                    <li>Hiking, camping, climbing</li>
+                    <li>Weightlifting, snowboarding, skiing</li>
+                    <li>Music and gaming</li>
                 </ul>
             </div>
 
             <!-- Extra -->
             <div class="section">
                 <div class="section-title">
-                    <h2>Extra</h2>
+                    <h2>Additional</h2>
                 </div>
                 <div class="item small">
-                    <span class="item-header">Rijbewijs met auto beschikbaar</span>
+                    <span class="item-header">Driver’s license with car available</span>
                 </div>
             </div>
 
@@ -354,12 +357,12 @@ $html = '
             <!-- About me -->
             <div class="section">
                 <div class="section-title">
-                    <h2>Over mij</h2>
+                    <h2>About me</h2>
                 </div>
                 <p>
-                    Ik ben een gemotiveerde en leergierige student met veel interesse in technologie en in het bieden van goede service aan klanten.  
-                    Door mijn ervaringen in verschillende sectoren (retail, horeca, entertainment, …) heb ik geleerd om goed samen te werken, problemen vlot op te lossen en anderen een prettige ervaring te bezorgen.  
-                    Graag zou ik tijdens mijn stage mijn vaardigheden verder kunnen ontwikkelen, bijleren en hopelijk een nuttige bijdrage leveren aan het team.
+                    I am a motivated and eager-to-learn student with a strong interest in technology and providing good customer service.  
+                    Through my experiences in various sectors (retail, hospitality, entertainment, etc.), I have learned to collaborate well, solve problems smoothly, and create pleasant experiences for others.  
+                    I would like to further develop my skills during an internship, continue learning, and hopefully make a useful contribution to the team.
                 </p>
             </div>
 
@@ -368,46 +371,46 @@ $html = '
             <!-- Work experience -->
             <div class="section">
                 <div class="section-title">
-                    <h2>Werkervaring</h2>
+                    <h2>Work Experience</h2>
                 </div>
 
                 <div class="item">
-                    <span class="item-header">Kassier / student – Brico, Hasselt</span>
-                    <span class="item-sub">Aug 2025 – Sep 2025 · studentenjob</span>
+                    <span class="item-header">Cashier / Student – Brico, Hasselt</span>
+                    <span class="item-sub">Aug 2025 – Sep 2025 · student job</span>
                     <span class="item-meta">
-                        Rekken aanvullen, displays netjes houden, klanten vriendelijk helpen en kassa verrichten in een levendige doe-het-zelfzaak.
+                        Stocking shelves, keeping displays tidy, assisting customers in a friendly manner, and operating the cash register in a busy DIY store.
                     </span>
                 </div>
 
                 <div class="item">
-                    <span class="item-header">Barman & staff – Versus, Hasselt</span>
-                    <span class="item-sub">Apr 2025 – Jun 2025 · studentenjob</span>
+                    <span class="item-header">Bartender & Staff – Versus, Hasselt</span>
+                    <span class="item-sub">Apr 2025 – Jun 2025 · student job</span>
                     <span class="item-meta">
-                        Dranken klaarmaken, bestellingen opnemen en klanten met een glimlach bedienen in een bruisende club; steeds proberen om problemen snel en vriendelijk op te lossen.
+                        Preparing drinks, taking orders, and serving customers with a smile in a lively club; always trying to resolve issues quickly and politely.
                     </span>
                 </div>
 
                 <div class="item">
-                    <span class="item-header">Productiemedewerker – Studio Pieter Stockmans, Genk</span>
-                    <span class="item-sub">Jan 2025 · 2 weken</span>
+                    <span class="item-header">Production Worker – Studio Pieter Stockmans, Genk</span>
+                    <span class="item-sub">Jan 2025 · 2 weeks</span>
                     <span class="item-meta">
-                        Meegeholpen bij het maken, decoreren en presenteren van porseleinproducten.
+                        Assisted in making, decorating, and presenting porcelain products.
                     </span>
                 </div>
 
                 <div class="item">
-                    <span class="item-header">Acteur / technicus – Old Tucson Company, Arizona (USA)</span>
+                    <span class="item-header">Actor / Technician – Old Tucson Company, Arizona (USA)</span>
                     <span class="item-sub">Oct 2022 – Dec 2024</span>
                     <span class="item-meta">
-                        Personages gespeeld om bezoekers een leuke ervaring te geven en licht/geluid bediend tijdens shows en evenementen.
+                        Played characters to give visitors an enjoyable experience and operated lights/sound during shows and events.
                     </span>
                 </div>
 
                 <div class="item">
-                    <span class="item-header">Seizoensmedewerker verhuizing – Uyttendaele Europese Verhuizingen, Aarschot</span>
-                    <span class="item-sub">Zomer 2019 · 4 weken</span>
+                    <span class="item-header">Seasonal Moving Assistant – Uyttendaele European Moving, Aarschot</span>
+                    <span class="item-sub">Summer 2019 · 4 weeks</span>
                     <span class="item-meta">
-                        Vrachtwagens helpen laden/lossen en in team goederen zorgvuldig en efficiënt verplaatsen.
+                        Helped load/unload trucks and carefully and efficiently moved goods as part of a team.
                     </span>
                 </div>
             </div>
@@ -417,22 +420,22 @@ $html = '
             <!-- Education -->
             <div class="section">
                 <div class="section-title">
-                    <h2>Opleiding & cursussen</h2>
+                    <h2>Education & Courses</h2>
                 </div>
 
                 <div class="item">
                     <span class="item-header">Full Stack Developer (Diploma) – SyntraPXL, Hasselt</span>
-                    <span class="item-sub">2025 – 2026 (lopend)</span>
+                    <span class="item-sub">2025 – 2026 (ongoing)</span>
                     <span class="item-meta">
-                        OO-programmeren, REST API’s, PHP/Laravel, Node.js, security, frontend (Angular/JS) en Agile werken.
+                        Object-oriented programming, REST APIs, PHP/Laravel, Node.js, security, frontend (Angular/JS), and Agile methodologies.
                     </span>
                 </div>
 
                 <div class="item">
-                    <span class="item-header">Nederlands – KU Leuven, Instituut voor Levende Talen</span>
+                    <span class="item-header">Dutch – KU Leuven, Institute for Living Languages</span>
                     <span class="item-sub">Feb 2025 – Jun 2025</span>
                     <span class="item-meta">
-                        Hogere taalcursus Nederlands met aandacht voor professionele communicatie.
+                        Advanced Dutch language course with focus on professional communication.
                     </span>
                 </div>
 
@@ -440,7 +443,7 @@ $html = '
                     <span class="item-header">Marana High School – Arizona, USA</span>
                     <span class="item-sub">2019 – 2022</span>
                     <span class="item-meta">
-                        Secundair onderwijs afgerond.
+                        Completed secondary education.
                     </span>
                 </div>
             </div>
@@ -448,7 +451,7 @@ $html = '
             <div class="divider"></div>
 
             <div class="bottom-note">
-                Deze pdf is automatisch gegenereerd met PHP (Dompdf & HTML/CSS).
+                This PDF was automatically generated with PHP (Dompdf & HTML/CSS).
             </div>
         </div>
     </div>
@@ -462,6 +465,6 @@ $html = '
 $dompdf->loadHtml($html);
 $dompdf->setPaper('A4', 'portrait');
 $dompdf->render();
-$dompdf->stream('sage-stockmans-cv.pdf', [
+$dompdf->stream('sage-stockmans-cv-english.pdf', [
     'Attachment' => false
 ]);
