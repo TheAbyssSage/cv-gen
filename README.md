@@ -31,3 +31,22 @@ $dompdf->stream('voorbeeld.pdf',[
 	'Attachment' => false // true = download, false = in browser
 ]);
 ```
+
+## How to generate the CVs
+
+Run either PHP file from the project root. It will create a PDF file in the same folder:
+
+```bash
+php cv-english.php
+php cv-dutch.php
+```
+
+The generated files will be:
+- `sage-stockmans-cv-english.pdf`
+- `sage-stockmans-cv-dutch.pdf`
+
+If you need to install dependencies first, run:
+
+```bash
+composer install
+```
