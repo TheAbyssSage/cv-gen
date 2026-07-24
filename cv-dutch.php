@@ -51,8 +51,8 @@ $html = '
 
         body {
             font-family: "DejaVu Sans", sans-serif;
-            font-size: 11px;
-            line-height: 1.5;
+            font-size: 10px;
+            line-height: 1.4;
             color: var(--ink);
             margin: 0;
             padding: 0;
@@ -60,7 +60,7 @@ $html = '
         }
 
         .page {
-            padding: 26px 32px;
+            padding: 18px 28px;
         }
 
         h1, h2, h3 {
@@ -99,34 +99,36 @@ $html = '
 
         .divider {
             border-top: 1px solid var(--dust);
-            margin: 8px 0 14px;
+            margin: 8px 0 12px;
         }
 
         .layout {
-            display: table;
             width: 100%;
-            table-layout: fixed;
-        }
-
-        .col-left,
-        .col-right {
-            display: table-cell;
-            vertical-align: top;
         }
 
         .col-left {
-            width: 35%;
+            float: left;
+            width: 32%;
             padding-right: 16px;
             border-right: 1px solid rgba(200,191,173,0.7);
+            vertical-align: top;
         }
 
         .col-right {
-            width: 65%;
+            float: left;
+            width: 64%;
             padding-left: 16px;
+            vertical-align: top;
+        }
+
+        .page::after {
+            content: "";
+            display: block;
+            clear: both;
         }
 
         .section {
-            margin-bottom: 12px;
+            margin-bottom: 10px;
         }
 
         .section-title {
@@ -134,7 +136,7 @@ $html = '
         }
 
         .item {
-            margin-bottom: 7px;
+            margin-bottom: 6px;
         }
 
         .item-header {
@@ -224,8 +226,8 @@ $html = '
         }
 
         .bottom-note {
-            margin-top: 10px;
-            font-size: 8px;
+            margin-top: 6px;
+            font-size: 7px;
             color: var(--slate);
             text-align: right;
         }
@@ -358,10 +360,37 @@ $html = '
                     <h2>Over mij</h2>
                 </div>
                 <p>
-                    Ik ben een gemotiveerde en leergierige student met veel interesse in technologie en in het bieden van goede service aan klanten.  
-                    Door mijn ervaringen in verschillende sectoren (retail, horeca, entertainment, …) heb ik geleerd om goed samen te werken, problemen vlot op te lossen en anderen een prettige ervaring te bezorgen.  
-                    Graag zou ik tijdens mijn stage mijn vaardigheden verder kunnen ontwikkelen, bijleren en hopelijk een nuttige bijdrage leveren aan het team.
+                    Junior web developer gespecialiseerd in PHP, Laravel, Angular en MySQL. Met mijn artistieke achtergrond en Amerikaans-Belgische roots combineer ik technisch inzicht met creativiteit. Ik bouw een Proxmox-homelab met Linux-containers, Docker en zelfgehoste diensten om mijn DevOps-vaardigheden te scherpen, en wil graag verder groeien binnen een innovatief IT-team.
                 </p>
+            </div>
+
+            <div class="divider"></div>
+
+            <!-- Projects -->
+            <div class="section">
+                <div class="section-title">
+                    <h2>Projecten &amp; Homelab</h2>
+                </div>
+
+                <div class="item">
+                    <span class="item-header">Persoonlijke website — sage-stockmans.com</span>
+                    <span class="item-meta">Portfolio met mijn achtergrond, projecten en contactgegevens. Gebouwd als een snelle, overzichtelijke landingspagina.</span>
+                </div>
+
+                <div class="item">
+                    <span class="item-header">GitHub-portfolio — github.com/TheAbyssSage</span>
+                    <span class="item-meta">Actief profiel met persoonlijke projecten en experimenten rond Laravel, Angular, AI-tools en DevOps-workflows.</span>
+                </div>
+
+                <div class="item">
+                    <span class="item-header">Proxmox-homelab</span>
+                    <span class="item-meta">Zelfgebouwde labomgeving met Linux-containers, virtuele machines, netwerken en zelfgehoste diensten; gebruikt om deployment-pipelines, Docker-stacks en productie-achtige omgevingen te testen.</span>
+                </div>
+
+                <div class="item">
+                    <span class="item-header">Hermes — AI-agent</span>
+                    <span class="item-meta">Persoonlijke agent die taken orkestreert, tools aanstuurt en repetitieve workflows automatiseert, pragmatisch geïntegreerd in Laravel/Angular-stacks.</span>
+                </div>
             </div>
 
             <div class="divider"></div>
@@ -389,27 +418,9 @@ $html = '
                 </div>
 
                 <div class="item">
-                    <span class="item-header">Productiemedewerker – Studio Pieter Stockmans, Genk</span>
-                    <span class="item-sub">Jan 2025 · 2 weken</span>
-                    <span class="item-meta">
-                        Meegeholpen bij het maken, decoreren en presenteren van porseleinproducten.
-                    </span>
-                </div>
-
-                <div class="item">
                     <span class="item-header">Acteur / technicus – Old Tucson Company, Arizona (USA)</span>
                     <span class="item-sub">Oct 2022 – Dec 2024</span>
-                    <span class="item-meta">
-                        Personages gespeeld om bezoekers een leuke ervaring te geven en licht/geluid bediend tijdens shows en evenementen.
-                    </span>
-                </div>
-
-                <div class="item">
-                    <span class="item-header">Seizoensmedewerker verhuizing – Uyttendaele Europese Verhuizingen, Aarschot</span>
-                    <span class="item-sub">Zomer 2019 · 4 weken</span>
-                    <span class="item-meta">
-                        Vrachtwagens helpen laden/lossen en in team goederen zorgvuldig en efficiënt verplaatsen.
-                    </span>
+                    <span class="item-meta">Personages gespeeld en licht/geluid bediend tijdens shows en evenementen.</span>
                 </div>
             </div>
 
@@ -423,26 +434,20 @@ $html = '
 
                 <div class="item">
                     <span class="item-header">Full Stack Developer (Diploma) – SyntraPXL, Hasselt</span>
-                    <span class="item-sub">2025 – 2026 (lopend)</span>
-                    <span class="item-meta">
-                        OO-programmeren, REST API’s, PHP/Laravel, Node.js, security, frontend (Angular/JS) en Agile werken.
-                    </span>
+                    <span class="item-sub">2026 · Afgestudeerd</span>
+                    <span class="item-meta">OO-programmeren, REST API’s, PHP/Laravel, Node.js, security, Angular/JavaScript, Scrum/Agile-werken en moderne deployment-basics.</span>
                 </div>
 
                 <div class="item">
                     <span class="item-header">Nederlands – KU Leuven, Instituut voor Levende Talen</span>
                     <span class="item-sub">Feb 2025 – Jun 2025</span>
-                    <span class="item-meta">
-                        Hogere taalcursus Nederlands met aandacht voor professionele communicatie.
-                    </span>
+                    <span class="item-meta">Hogere taalcursus Nederlands met focus op professionele communicatie.</span>
                 </div>
 
                 <div class="item">
                     <span class="item-header">Marana High School – Arizona, USA</span>
                     <span class="item-sub">2019 – 2022</span>
-                    <span class="item-meta">
-                        Secundair onderwijs afgerond.
-                    </span>
+                    <span class="item-meta">Secundair onderwijs afgerond.</span>
                 </div>
             </div>
 
@@ -463,6 +468,8 @@ $html = '
 $dompdf->loadHtml($html);
 $dompdf->setPaper('A4', 'portrait');
 $dompdf->render();
-$dompdf->stream('sage-stockmans-cv-dutch.pdf', [
-    'Attachment' => false
-]);
+
+$outputFile = __DIR__ . '/sage-stockmans-cv-dutch.pdf';
+file_put_contents($outputFile, $dompdf->output());
+
+echo "PDF opgeslagen naar: $outputFile\n";

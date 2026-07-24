@@ -51,8 +51,8 @@ $html = '
 
         body {
             font-family: "DejaVu Sans", sans-serif;
-            font-size: 11px;
-            line-height: 1.5;
+            font-size: 10.5px;
+            line-height: 1.45;
             color: var(--ink);
             margin: 0;
             padding: 0;
@@ -60,7 +60,7 @@ $html = '
         }
 
         .page {
-            padding: 26px 32px;
+            padding: 18px 28px;
         }
 
         h1, h2, h3 {
@@ -99,34 +99,36 @@ $html = '
 
         .divider {
             border-top: 1px solid var(--dust);
-            margin: 8px 0 14px;
+            margin: 8px 0 12px;
         }
 
         .layout {
-            display: table;
             width: 100%;
-            table-layout: fixed;
-        }
-
-        .col-left,
-        .col-right {
-            display: table-cell;
-            vertical-align: top;
         }
 
         .col-left {
-            width: 35%;
+            float: left;
+            width: 32%;
             padding-right: 16px;
             border-right: 1px solid rgba(200,191,173,0.7);
+            vertical-align: top;
         }
 
         .col-right {
-            width: 65%;
+            float: left;
+            width: 64%;
             padding-left: 16px;
+            vertical-align: top;
+        }
+
+        .page::after {
+            content: "";
+            display: block;
+            clear: both;
         }
 
         .section {
-            margin-bottom: 12px;
+            margin-bottom: 10px;
         }
 
         .section-title {
@@ -134,7 +136,7 @@ $html = '
         }
 
         .item {
-            margin-bottom: 7px;
+            margin-bottom: 6px;
         }
 
         .item-header {
@@ -224,8 +226,8 @@ $html = '
         }
 
         .bottom-note {
-            margin-top: 10px;
-            font-size: 8px;
+            margin-top: 6px;
+            font-size: 7px;
             color: var(--slate);
             text-align: right;
         }
@@ -243,11 +245,6 @@ $html = '
             <div class="section">
                 <div class="header-row">
                     <!-- Optional photo; uncomment if you want the picture -->
-                    <!--
-                    <div class="header-photo">
-                        <img src="' . htmlspecialchars($photoSrc) . '" alt="Profile photo">
-                    </div>
-                    -->
                     <div class="header-main">
                         <h1>' . htmlspecialchars($name) . '</h1>
                         <div class="tagline">
@@ -360,10 +357,37 @@ $html = '
                     <h2>About me</h2>
                 </div>
                 <p>
-                    I am a motivated and eager-to-learn student with a strong interest in technology and providing good customer service.  
-                    Through my experiences in various sectors (retail, hospitality, entertainment, etc.), I have learned to collaborate well, solve problems smoothly, and create pleasant experiences for others.  
-                    I would like to further develop my skills during an internship, continue learning, and hopefully make a useful contribution to the team.
+                    Junior web developer specialised in PHP, Laravel, Angular and MySQL. With my artistic background and American-Belgian roots I combine technical insight with creativity. I run a Proxmox homelab with Linux containers, Docker and self-hosted services to sharpen my DevOps skills.
                 </p>
+            </div>
+
+            <div class="divider"></div>
+
+            <!-- Projects -->
+            <div class="section">
+                <div class="section-title">
+                    <h2>Projects & Homelab</h2>
+                </div>
+
+                <div class="item">
+                    <span class="item-header">Personal website — sage-stockmans.com</span>
+                    <span class="item-meta">Portfolio introducing my background, featured projects and contact details. Built as a clean, fast landing page.</span>
+                </div>
+
+                <div class="item">
+                    <span class="item-header">GitHub portfolio — github.com/TheAbyssSage</span>
+                    <span class="item-meta">Active profile with personal projects and experiments around Laravel, Angular, AI tooling and DevOps workflows.</span>
+                </div>
+
+                <div class="item">
+                    <span class="item-header">Proxmox homelab</span>
+                    <span class="item-meta">Self-hosted lab running Linux containers, virtual machines, networking and self-hosted services; used to test deployment pipelines, Docker stacks and production-like setups.</span>
+                </div>
+
+                <div class="item">
+                    <span class="item-header">Hermes — AI agent</span>
+                    <span class="item-meta">Personal agent that orchestrates tasks, controls tools and automates repetitive workflows, pragmatically integrated into Laravel/Angular stacks.</span>
+                </div>
             </div>
 
             <div class="divider"></div>
@@ -390,13 +414,13 @@ $html = '
                     </span>
                 </div>
 
-                <div class="item">
+                <!-- <div class="item">
                     <span class="item-header">Production Worker – Studio Pieter Stockmans, Genk</span>
                     <span class="item-sub">Jan 2025 · 2 weeks</span>
                     <span class="item-meta">
                         Assisted in making, decorating, and presenting porcelain products.
                     </span>
-                </div>
+                </div> -->
 
                 <div class="item">
                     <span class="item-header">Actor / Technician – Old Tucson Company, Arizona (USA)</span>
@@ -406,13 +430,13 @@ $html = '
                     </span>
                 </div>
 
-                <div class="item">
+                <!-- <div class="item">
                     <span class="item-header">Seasonal Moving Assistant – Uyttendaele European Moving, Aarschot</span>
                     <span class="item-sub">Summer 2019 · 4 weeks</span>
                     <span class="item-meta">
                         Helped load/unload trucks and carefully and efficiently moved goods as part of a team.
                     </span>
-                </div>
+                </div> -->
             </div>
 
             <div class="divider"></div>
@@ -425,26 +449,20 @@ $html = '
 
                 <div class="item">
                     <span class="item-header">Full Stack Developer (Diploma) – SyntraPXL, Hasselt</span>
-                    <span class="item-sub">2025 – 2026 (ongoing)</span>
-                    <span class="item-meta">
-                        Object-oriented programming, REST APIs, PHP/Laravel, Node.js, security, frontend (Angular/JS), and Agile methodologies.
-                    </span>
+                    <span class="item-sub">2026 · Graduated</span>
+                    <span class="item-meta">OO programming, REST APIs, PHP/Laravel, Node.js, security, Angular/JS, Agile workflows and modern deployment basics.</span>
                 </div>
 
                 <div class="item">
                     <span class="item-header">Dutch – KU Leuven, Institute for Living Languages</span>
                     <span class="item-sub">Feb 2025 – Jun 2025</span>
-                    <span class="item-meta">
-                        Advanced Dutch language course with focus on professional communication.
-                    </span>
+                    <span class="item-meta">Advanced Dutch course focused on professional communication.</span>
                 </div>
 
                 <div class="item">
                     <span class="item-header">Marana High School – Arizona, USA</span>
                     <span class="item-sub">2019 – 2022</span>
-                    <span class="item-meta">
-                        Completed secondary education.
-                    </span>
+                    <span class="item-meta">Completed secondary education.</span>
                 </div>
             </div>
 
@@ -465,6 +483,8 @@ $html = '
 $dompdf->loadHtml($html);
 $dompdf->setPaper('A4', 'portrait');
 $dompdf->render();
-$dompdf->stream('sage-stockmans-cv-english.pdf', [
-    'Attachment' => false
-]);
+
+$outputFile = __DIR__ . '/sage-stockmans-cv-english.pdf';
+file_put_contents($outputFile, $dompdf->output());
+
+echo "PDF saved to: $outputFile\n";
